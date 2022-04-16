@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/civil_engineer">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="180dp"
+        android:layout_marginBottom="125dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="@string/civil"
+            android:fontFamily="@font/product_sans_regular"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="@string/engineering"
+            android:fontFamily="@font/product_sans_regular"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:text="@string/project"
+            android:fontFamily="@font/product_sans_bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/full_time"
+            android:textSize="20sp"
+            android:textColor="@color/dark_blue_gallery"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/photographer_date"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv_image_show_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rv_civil_show_option"
+        android:layout_marginTop="50dp"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/background_vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/gallery"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:background="@drawable/gallery_background"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginLeft="50dp"
+                        android:src="@drawable/gallery_line"
+                        />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_exterior_civil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/exterior_civil"
+                        android:layout_marginRight="20dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_real_estate_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/real_estate_name"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:id="@+id/iv_blue_print_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/blueprint_vertical"
+                        android:layout_marginRight="20dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_interior_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/interior_vertical"
+                            android:layout_marginBottom="10dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/iv_structural_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/structural_vertical"
+                            android:layout_marginBottom="10dp"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/iv_background_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/overlay"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        />
+
+    <!--horizontal gallery-->
+    <RelativeLayout
+        android:id="@+id/rv_galery_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rv_image_show_horizontal"
+        android:layout_marginBottom="5dp"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:id="@+id/tv_gallery_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/overlay_box"
+            android:text="Gallery"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:padding="10dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/gallery_line"
+            android:paddingRight="100dp"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+
+    <!--horizontal-->
+    <RelativeLayout
+        android:id="@+id/rv_image_show_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rv_civil_show_option"
+        android:visibility="visible"
+        >
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_civil_view_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_interior_civil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/interior_civil"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="80dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_real_estate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/real_estate_civil"
+                        android:layout_marginRight="30dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_blue_print"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/blueprint_civil"
+                        android:layout_marginRight="30dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_structural"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/structural_civil" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/iv_post_civil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/post_civil"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rv_civil_show_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        >
+
+        <!--show more-->
+        <LinearLayout
+            android:id="@+id/ll_show_more_civil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/show_more_symbol"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show More"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+        <!--show less-->
+        <LinearLayout
+            android:id="@+id/ll_show_less_civil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/show_less_symbol"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Less"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

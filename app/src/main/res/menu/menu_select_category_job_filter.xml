@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group>
+        <item
+            android:id="@+id/item_archictecture_and_construction"
+            android:title="Architecture"
+            />
+
+        <item
+            android:id="@+id/item_arts"
+            android:title="Arts"
+            />
+
+        <item
+            android:id="@+id/item_Audio_technology_and_communication"
+            android:title="DKV"
+            />
+
+        <item
+            android:id="@+id/item_business_management_administration"
+            android:title="Business management administration"
+            />
+    </group>
+
+    <group
+        >
+        <item
+            android:id="@+id/item_human_services"
+            android:title="Human services"
+            />
+
+        <item
+            android:id="@+id/item_information_technology"
+            android:title="Information technology"
+            />
+        <item
+            android:id="@+id/item_manufacturing"
+            android:title="Manufactoring"
+            />
+
+        <item
+            android:id="@+id/item_marketing_sales_service"
+            android:title="Marketing, sales and services"
+            />
+        <item
+            android:id="@+id/item_science_and_mathematics"
+            android:title="Science and mathematics"
+            />
+    </group>
+
+
+</menu>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ability"
+            android:textSize="20sp"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_edit_ability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/ability"
+                android:ems="8"
+                android:textSize="20sp"
+                android:inputType="text"
+                android:fontFamily="@font/product_sans_regular"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_level_edit_ability"
+                android:layout_width="120dp"
+                android:layout_height="43dp"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                />
+
+            <ImageView
+                android:id="@+id/delete_this_ability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/delete"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/blue_border"
+        />
+
+    <Button
+        android:id="@+id/btn_add_new_ability"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/delete_button_radius"
+        android:text="@string/add_new_education"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.finalproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".main.ApplyjobFragment"></activity>
+        <activity android:name=".main.JoblistFragment" />
+        <activity android:name=".main.GalleryFragment" />
+        <activity android:name=".main.BookmarkFragment" />
+        <activity android:name=".main.ContactFragment" />
+        <activity android:name=".main.FaqFragment" />
+        <activity android:name=".main.HelpFragment" />
+        <activity android:name=".main.TrashFragment" />
+        <activity android:name=".main.ApplyboxFragment" />
+        <activity android:name=".loginregist.ResetPassActivity" />
+        <activity android:name=".main.HomeFragment" />
+        <activity android:name=".gallery.Animation" />
+        <activity android:name=".gallery.Architecture" />
+        <activity android:name=".gallery.CivilEngineer" />
+        <activity android:name=".gallery.Photographer" />
+        <activity android:name=".gallery.UXDesign" />
+        <activity android:name=".main.LogoutFragment" />
+        <activity android:name=".main.LookFragment" />
+        <activity android:name=".main.ProfileFragment" />
+        <activity android:name=".loginregist.TermsActivity" />
+        <activity android:name=".loginregist.ForgetPassActivity" />
+        <activity android:name=".splashscreen.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".loginregist.RegisterActivity" />
+        <activity android:name=".loginregist.LoginActivity" />
+        <activity android:name=".main.MainActivity" />
+    </application>
+
+</manifest>

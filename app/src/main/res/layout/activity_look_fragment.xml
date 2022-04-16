@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_loginregist"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:background="@drawable/ic_background_job_filter">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="30dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Area"
+                        android:fontFamily="@font/product_san"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_select_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/et_select_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Select Category"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/product_san"
+                            android:textColor="@color/black"
+                            android:layout_toLeftOf="@+id/iv_option_category"
+                            />
+
+                        <ImageView
+                            android:id="@+id/iv_option_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_to_email_symbol"
+                            android:layout_margin="10dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_to_email_symbol"
+                            android:layout_margin="10dp"
+                            android:visibility="gone"
+
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_line"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Job type"
+                        android:fontFamily="@font/product_san"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/rv_job_type_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <Button
+                            android:id="@+id/btn_all_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_corner"
+                            android:paddingTop="25dp"
+                            android:paddingBottom="25dp"
+                            android:text="All Type"
+                            android:textAllCaps="false"
+
+                            />
+
+                        <Button
+                            android:id="@+id/btn_full_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="25dp"
+                            android:paddingBottom="25dp"
+                            android:background="@drawable/rectangle_corner"
+                            android:text="Full Time"
+                            android:textAllCaps="false"
+                            android:layout_centerInParent="true"
+                            />
+
+                        <Button
+                            android:id="@+id/btn_part_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="25dp"
+                            android:paddingBottom="25dp"
+                            android:background="@drawable/rectangle_corner"
+                            android:text="Part Time"
+                            android:textAllCaps="false"
+                            android:layout_alignParentRight="true"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rv_job_type_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        >
+                        <Button
+                            android:id="@+id/btn_temporary_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_corner"
+                            android:textAllCaps="false"
+                            android:text="Temporary"
+                            android:paddingTop="25dp"
+                            android:paddingBottom="25dp"
+                            />
+                        <Button
+                            android:id="@+id/btn_internship_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_corner"
+                            android:text="Internship"
+                            android:textAllCaps="false"
+                            android:paddingBottom="25dp"
+                            android:paddingTop="25dp"
+                            android:layout_centerInParent="true"
+                            />
+                        <Button
+                            android:id="@+id/btn_outsourced_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="false"
+                            android:text="Outsourced"
+                            android:background="@drawable/rectangle_corner"
+                            android:paddingTop="25dp"
+                            android:paddingBottom="25dp"
+                            android:layout_alignParentRight="true"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_line"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:fontFamily="@font/product_san"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <Button
+                            android:id="@+id/btn_location_banten"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Banten"
+                            android:background="@drawable/rectangle_corner"
+                            android:textAllCaps="false"
+                            android:paddingBottom="25dp"
+                            android:paddingTop="25dp"
+                            />
+
+                        <Button
+                            android:id="@+id/btn_location_jakarta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DKI Jakarta"
+                            android:textAllCaps="false"
+                            android:background="@drawable/rectangle_corner"
+                            android:paddingBottom="25dp"
+                            android:paddingTop="25dp"
+                            android:layout_centerInParent="true"
+                            />
+
+                        <Button
+                            android:id="@+id/btn_location_westjava"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="false"
+                            android:text="West Java"
+                            android:background="@drawable/rectangle_corner"
+                            android:paddingTop="25dp"
+                            android:paddingBottom="25dp"
+                            android:layout_alignParentRight="true"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_line"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_line"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <Button
+                        android:id="@+id/btn_search_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Search"
+                        android:textSize="15sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:background="@drawable/rounded_corners"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

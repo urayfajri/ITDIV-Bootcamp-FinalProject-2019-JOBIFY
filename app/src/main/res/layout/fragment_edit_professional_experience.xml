@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/company_name"
+            android:textSize="20sp"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            />
+
+        <EditText
+            android:id="@+id/et_company_name_edit_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/company_name"
+            android:ems="15"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:fontFamily="@font/product_sans_regular"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/title"
+            android:textSize="20sp"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            />
+
+        <EditText
+            android:id="@+id/et_title_edit_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/title"
+            android:ems="15"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:fontFamily="@font/product_sans_regular"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/local"
+            android:textSize="20sp"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            />
+
+        <EditText
+            android:id="@+id/et_local_edit_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/local"
+            android:ems="15"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:fontFamily="@font/product_sans_regular"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_date"
+                android:textSize="20sp"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="@string/end_date"
+                android:textSize="20sp"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="@string/until_now"
+                android:textSize="20sp"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_start_experience"
+                android:layout_width="120dp"
+                android:layout_height="43dp"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_end_experience"
+                android:layout_width="120dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="15dp"
+                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+            <CheckBox
+                android:id="@+id/cb_until_now_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:buttonTint="@color/dark_blue"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/description"
+            android:textSize="20sp"
+            android:gravity="start"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            />
+
+        <EditText
+            android:id="@+id/et_description_edit_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/description"
+            android:ems="15"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:fontFamily="@font/product_sans_regular"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/delete_this_experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/delete_this_experience"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/delete"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/blue_border"
+        />
+
+    <Button
+        android:id="@+id/btn_add_new_experience"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/delete_button_radius"
+        android:text="@string/add_new_experience"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>

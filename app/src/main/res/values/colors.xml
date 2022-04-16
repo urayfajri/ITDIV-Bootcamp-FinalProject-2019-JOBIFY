@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="grey">#8B8989</color>
+    <color name="background">#F2EDFAFF</color>
+    <color name="button">#0D334B</color>
+    <color name="light_blue">#298FA6</color>
+    <color name="navy_blue">#882144F3</color>
+    <color name="forgotPassword">#298FA6</color>
+    <color name="youngBlack">#1D2226</color>
+    <color name="yellow">#ffdd00</color>
+    <color name="dark_blue">#0d334b</color>
+    <color name="topBar">#0D334B</color>
+    <color name="buttonClicked">#073042</color>
+    <color name="blue_border">#298FA6</color>
+    <color name="grey_border">#707070</color>
+    <color name="see_more">#14B2B5</color>
+    <color name="delete_button">#0D334B</color>
+    <color name="listmenu">#14B2B5</color>
+
+
+    <color name="dark_blue_gallery">#0D334B</color>
+
+
+
+    <color name="gallery_post_color">#FFDF00</color>
+
+
+</resources>

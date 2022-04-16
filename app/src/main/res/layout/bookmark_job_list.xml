@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/job_list_rectangle"
+    android:id="@+id/rl_job_list">
+
+    <LinearLayout
+        android:id="@+id/ll_image_job_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image_main_job_list"
+                android:layout_alignParentLeft="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/blur_image_job_list" />
+
+            <ImageView
+                android:id="@+id/iv_bookmarked"
+                android:clickable="true"
+                android:src="@drawable/bookmark"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_job_list_info"
+        android:layout_above="@+id/iv_underline_job_search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/ll_image_job_list"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            >
+
+            <TextView
+                android:id="@+id/tv_job_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Name"
+                android:textColor="@color/black"
+                android:fontFamily="@font/product_san"
+                android:textSize="20sp"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_location_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/place_job_symbol"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_place_job"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Place of job"
+                        android:fontFamily="@font/product_san"
+
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_location_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:fontFamily="@font/product_san"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_date_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of job"
+                android:fontFamily="@font/product_san"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_job_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/small_horizontal_for_job_list_1"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/small_horizontal_for_job_list_2"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_job_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job type"
+                android:fontFamily="@font/product_san"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_underline_job_search_list"
+        android:layout_below="@+id/ll_image_job_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/underline_job_search_list"
+        />
+
+</RelativeLayout>

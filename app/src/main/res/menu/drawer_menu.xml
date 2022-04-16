@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/nav_my_profile"
+            android:icon="@drawable/my_profile"
+            android:title="@string/my_profile" />
+
+        <item
+            android:id="@+id/nav_take_a_look"
+            android:icon="@drawable/take_a_look"
+            android:title="@string/take_a_look" />
+
+        <item
+            android:id="@+id/nav_bookmark"
+            android:icon="@drawable/bookmark"
+            android:title="@string/bookmark"/>
+
+        <item
+            android:id="@+id/nav_mailbox"
+            android:icon="@drawable/applybox"
+            android:title="@string/applybox"/>
+
+        <item
+            android:id="@+id/nav_trash"
+            android:icon="@drawable/trash"
+            android:title="@string/trash"/>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_divider">
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/help"
+            android:title="@string/help"
+            />
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/log_out"
+            android:title="@string/log_out"
+            />
+    </group>
+
+</menu>

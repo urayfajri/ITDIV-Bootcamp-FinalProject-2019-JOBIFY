@@ -1,0 +1,143 @@
+<resources>
+    <string name="app_name">JobApplication</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="repeat">Repeat Password</string>
+    <string name="country">Country</string>
+    <string name="who_am_i">Who Am I?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="title">Title</string>
+    <string name="email">Email</string>
+    <string name="pro_experience">Professional Experience</string>
+    <string name="education">Education</string>
+    <string name="skills">Skills</string>
+    <string name="language">Language</string>
+    <string name="training_courses">Training Courses</string>
+    <string name="contacts">Contacts</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="hey">Hey "\u00DC" There</string>
+    <string name="please_login">Please login to your account.</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="username_or_email">Username or Email Address</string>
+    <string name="by_signing_up">By Signing up, you agree with our Terms &#38; Conditions</string>
+
+    <string-array name="position">
+        <item>Candidate</item>
+        <item>Employee</item>
+        <item>Freelancer</item>
+    </string-array>
+
+    <string name="my_profile">My profile</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="mailbox">Mailbox</string>
+    <string name="saved_searches">Saved searches</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="log_out">Log out</string>
+    <string name="take_a_look">Take a look!</string>
+    <string name="header_email">binus.university@binus.ac.id</string>
+    <string name="header_name">Android User</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="applybox">Applybox</string>
+    <string name="trash">Trash</string>
+    <string name="home">Home</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="professional_exp">Professional Experience</string>
+    <string name="see_more">See More</string>
+    <string name="ability">Ability</string>
+    <string name="add_new_education">Add New Education</string>
+    <string name="institution">Institution</string>
+    <string name="academic_degree">Academic Degree</string>
+    <string name="study_area">Study Area</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="until_now">Until Now</string>
+    <string name="description">Description</string>
+    <string name="delete_this_education">Delete This Education</string>
+    <string name="company_name">Company Name</string>
+    <string name="local">Local</string>
+    <string name="delete_this_experience">Delete This Experience</string>
+    <string name="add_new_experience">Add New Experience</string>
+    <string name="change_password">Change Password</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="time_stamp">time stamp</string>
+
+    <string-array name="level">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string name="gallery">Gallery</string>
+    <string name="animation">Animation</string>
+    <string name="architecture">Architecture</string>
+    <string name="civil">Civil</string>
+    <string name="engineering">Engineering</string>
+    <string name="graphic_designer">Graphic Design</string>
+    <string name="photography">Photography</string>
+    <string name="ux_design">UX Design</string>
+
+    <string name="project">project</string>
+    <string name="post">POSTS</string>
+    <string name="animation_count">7</string>
+    <string name="architecture_count">6</string>
+    <string name="graphic_design_count">5</string>
+
+    <string name="show_more">See More</string>
+    <string name="show_less">See Less</string>
+
+    <string name="full_time">Full Time</string>
+    <string name="part_time">Part Time</string>
+    <string name="freelance">Freelance</string>
+
+    <string name="animation_date">February, 11 2020</string>
+    <string name="architecture_date">February, 9 2020</string>
+
+    <string name="graphic_design_date">February, 8  2020</string>
+    <string name="photographer_date">February, 10 2020</string>
+    <string name="ux_date">February, 11 2020</string>
+    <string name="company_name_">Company name</string>
+    <string name="job_name">Job name</string>
+    <string name="location">Location</string>
+    <string name="date_of_job">Date of job</string>
+    <string name="type_of_job">Type of job</string>
+    <string name="the_company">The Company</string>
+    <string name="garena_is_a_consumer_internet_platform_provider_based_in_asia_it_was_founded_in_singapore_in_2009_garena_exclusively_distributes_game_titles_on_garena_in_various_countries_across_southeast_asia_and_taiwan">Garena is a consumer Internet platform provider based in Asia. It was founded in Singapore in 2009. Garena exclusively distributes game titles on Garena+ in various countries across Southeast Asia and Taiwan.</string>
+    <string name="about_job">About Job</string>
+    <string name="skill_and_experience">Skill and Experience</string>
+    <string name="what_we_offer">What we offer</string>
+    <string name="apply_for_this_job">Apply for this job</string>
+    <string name="a_p_p_l_y">a p p l y</string>
+    <string name="success">success</string>
+    <string name="we_will_sent_the_application_information_nto_your_email_soon">we will sent the application information to your email soon</string>
+    <string name="thanks_for_joining_with_us">THANKS FOR JOINING WITH US</string>
+    <string name="continue_">Continue</string>
+    <string name="tell_us_what_problem_you_encountered">Tell us what problem you encountered</string>
+    <string name="describe_your_problem">Describe your problem</string>
+    <string name="report">Report</string>
+    <string name="have_you_read_our_faq_yet">Have you read our FAQ yet?</string>
+    <string name="frequently_asked_question">Frequently Asked Question</string>
+    <string name="faq">(FAQ)</string>
+    <string name="_1_what_is_faq_page">1. What is FAQ page?</string>
+    <string name="this_is_where_you_can_find_the_most_asked_questions_and_its_answers">This is where you can find the most asked questions and its answers</string>
+    <string name="_2_does_the_app_allow_me_to_apply_more_than_one_job">2. Does the app allow me to apply more than one job ?</string>
+    <string name="definitely_yes_of_course_you_can_apply_to_multiple_jobs_rather_than_one_it_s_up_to_you">Definitely yes, of course, you can apply to multiple jobs rather than one, it\'s up to you</string>
+    <string name="_3_do_i_have_to_pay_membership_fee_to_use_this_application">3. Do I have to pay membership fee to use this application?</string>
+    <string name="no_we_provide_it_free_only_for_you">No, we provide it free only for you</string>
+
+
+</resources>

@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/apply_job_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:background="@drawable/image_main_job_list">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/blur_image_job_list">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+
+                    <ImageButton
+                        android:id="@+id/ib_back"
+                        android:layout_width="12dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/apply_job_back_button" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/unbookmarked"
+                            android:layout_marginLeft="290dp"
+                            />
+
+                        <ImageButton
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/bookmark"
+                            android:layout_marginLeft="290dp"
+                            android:visibility="gone"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/company_garena_symbol"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <TextView
+                        android:id="@+id/tv_place_job"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/company_name_"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:textSize="25sp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_job_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/job_name"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/place_job_symbol"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_location_job"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/location"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/product_san"
+                            android:paddingLeft="5dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="#4D000000"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_date_job"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/date_of_job"
+                            android:gravity="right"
+                            android:paddingRight="20dp"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"/>
+
+                        <ImageView
+                            android:layout_width="2dp"
+                            android:layout_height="19dp"
+                            android:background="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/tv_job_type"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/type_of_job"
+                            android:gravity="left"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shadow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/apply_job_desc_bg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#99FFFFFF"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/about_job_desc"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="10dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/the_company"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/black"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_the_company_desc"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/garena_is_a_consumer_internet_platform_provider_based_in_asia_it_was_founded_in_singapore_in_2009_garena_exclusively_distributes_game_titles_on_garena_in_various_countries_across_southeast_asia_and_taiwan"
+                                android:textSize="12sp"
+                                android:textColor="@color/black"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#0D334B"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/about_job_desc"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="10dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/about_job"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/black"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_about_job_desc"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="A) work with your team to produce through specification for developer and to ensure the animation's specifications are implemented providing constructive and timely feedback; \nB) Work with the senior animator and animation director to plan and track the design progress"
+                                android:textSize="12sp"
+                                android:textColor="@color/black"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#0D334B"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/skill_and_experience_desc"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="10dp"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_skill_and_experience_desc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/skill_and_experience"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/black"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_skill_and_experience"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="1) 2(+) or more years of experience recommended; \n2) Passionate about Understanding current workflow and emerging animate trends; \n3) Proficient with animation software (Adobe Animate Autodesk 3DS Max, Blender, etc)"
+                                android:textSize="12sp"
+                                android:textColor="@color/black"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#0D334B"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/what_we_offer_desc"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="10dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/what_we_offer"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/black"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_what_we_offer_desc"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/garena_is_a_consumer_internet_platform_provider_based_in_asia_it_was_founded_in_singapore_in_2009_garena_exclusively_distributes_game_titles_on_garena_in_various_countries_across_southeast_asia_and_taiwan"
+                                android:textSize="12sp"
+                                android:textColor="@color/black"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#0D334B"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_apply_for_this_job"
+                                android:clickable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/contact_us_report_background"
+                                android:text="@string/apply_for_this_job"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:paddingTop="15dp"
+                                android:paddingBottom="15dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blur_image_job_list"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_apply"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="#E60D334B">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_p_p_l_y"
+            android:textColor="#FFDF00"
+            android:textSize="50sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/success"
+            android:textSize="50sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/we_will_sent_the_application_information_nto_your_email_soon"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:layout_marginBottom="28dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/thanks_for_joining_with_us"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:layout_marginBottom="28dp"/>
+
+        <TextView
+            android:id="@+id/tv_continue_button"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_"
+            android:background="@drawable/apply_success_continue_button"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/ll_profile"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/home_home"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/my_profile"
+                />
+
+            <TextView
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:gravity="center"
+                android:text="@string/my_profile"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/ll_profile"
+            android:id="@+id/ll_look"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/home_take_a_look"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/take_a_look"
+                />
+
+            <TextView
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:gravity="center"
+                android:text="@string/take_a_look"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/ll_look"
+            android:id="@+id/ll_bookmark"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/home_bookmark"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bookmark"
+                />
+
+            <TextView
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:gravity="center"
+                android:text="@string/bookmark"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/ll_bookmark"
+            android:id="@+id/ll_applybox"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/home_applybox"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/applybox"
+                />
+
+            <TextView
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:gravity="center"
+                android:text="@string/applybox"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/ll_applybox"
+            android:id="@+id/ll_trash"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/home_trash"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/trash"
+                />
+
+            <TextView
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:gravity="center"
+                android:text="@string/trash"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/ic_background_symbol">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/formlogout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Log out of Jobify?"
+                        android:fontFamily="@font/product_san"
+                        android:textColor="@color/light_blue"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Are you sure to log out?"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="50dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_cancel_logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:textSize="20sp"
+                        android:textColor="@color/yellow"
+                        android:paddingRight="40dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Log Out"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:paddingLeft="40dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
